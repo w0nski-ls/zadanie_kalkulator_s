@@ -1,0 +1,24 @@
+server:
+  port: 9090
+
+calculator:
+  workdaysCount: 22
+  uri: "http://api.nbp.pl/api/exchangerates/rates/a/%s/last/1/?format=json"
+
+model:
+  countries:
+    -
+      code: UK
+      currency: GBP
+      tax: 25
+      cost: 600
+    -
+      code: DE
+      currency: EUR
+      tax: 20
+      cost: 800
+    -
+      code: PL
+      currency: PLN
+      tax: 19
+      cost: 1200
